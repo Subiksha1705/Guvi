@@ -1,0 +1,124 @@
+subik@SUBIKSHA MINGW64 ~
+$ git -v
+git version 2.47.0.windows.2
+
+subik@SUBIKSHA MINGW64 ~
+$ mkdir devops051
+
+subik@SUBIKSHA MINGW64 ~
+$ cd devops051
+
+subik@SUBIKSHA MINGW64 ~/devops051
+$ git init
+Initialized empty Git repository in C:/Users/subik/devops051/.git/
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ notepad code.txt
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        code.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git add code.txt
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   code.txt
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git add *
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git add .
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   code.txt
+
+
+#subiksha is my name
+
+commit
+
+[master (root-commit) e77ab6d] commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 code.txt
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git log
+commit e77ab6df9c63a80c4eac780219a9814d70214c27 (HEAD -> master)
+Author: Subiksha1705 <subiksharameshkanna@gmail.com>
+Date:   Thu Dec 26 14:13:14 2024 +0530
+
+    commit
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git branch -d
+fatal: branch name required
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git config --global user.email "subiksharameshkanna@gmail.com"^C
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git config --global user.name "Subiksha1705"
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git branch feature
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git branch
+  feature
+* master
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git checkout-b feature
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$ git checkout -b features
+Switched to a new branch 'features'
+
+subik@SUBIKSHA MINGW64 ~/devops051 (features)
+$ git branch
+  feature
+* features
+  master
+
+subik@SUBIKSHA MINGW64 ~/devops051 (features)
+$ git checkout master
+Switched to branch 'master'
+
+subik@SUBIKSHA MINGW64 ~/devops051 (master)
+$git branch -d branch-name
+
